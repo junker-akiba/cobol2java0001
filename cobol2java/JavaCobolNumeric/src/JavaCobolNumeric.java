@@ -4,28 +4,28 @@ public class JavaCobolNumeric {
 
 	public static void main(String[] args) {
 		if (args.length < 3) {
-			System.out.println("usage :  JavaCobolNumeric Operate Integer1 Integer2");
+			System.out.println("usage :  JavaCobolNumeric Operate Numeric1 Numeric2");
 			System.out.println("operate = ADD|SUB|MUL|DIV");
 			
 		} else {
-			CbNumeric integerA = new CbNumeric();
-			CbNumeric integerB = new CbNumeric();
+			CbNumeric numericA = new CbNumeric();
+			CbNumeric numericB = new CbNumeric();
 			String operate = args[0];
-			integerA.load(args[1]);
-			integerB.load(args[2]);
+			numericA.load(args[1]);
+			numericB.load(args[2]);
 			CbNumeric result = new CbNumeric();
 			switch (operate) {
 			case "ADD":
-				result = CbNumeric.add(integerA, integerB);
+				result = CbNumeric.add(numericA, numericB);
 				break;
 			case "SUB":
-				result = CbNumeric.subtract(integerA, integerB);
+				result = CbNumeric.subtract(numericA, numericB);
 				break;
 			case "MUL":
-				result = CbNumeric.multiply(integerA, integerB);
+				result = CbNumeric.multiply(numericA, numericB);
 				break;
 			case "DIV":
-				CbNumeric.DivideResult divResult = CbNumeric.divide(integerA, integerB);
+				CbNumeric.DivideResult divResult = CbNumeric.divide(numericA, numericB);
 				System.out.println("remainder = " + divResult.remainder.save());
 				result = divResult.quotient;
 				break;
