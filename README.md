@@ -34,7 +34,7 @@ remainder = 6172.88
 result = 50  
 
 開発環境  
-　JavaはEclipse、COBOLはVsCodeからGnuCobolを使用。  
+  JavaはEclipse、COBOLはVsCodeからGnuCobolを使用。  
   Ubuntu26.04の上で環境構築、動作確認。  
 
 課題  
